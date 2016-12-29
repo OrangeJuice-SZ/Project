@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.orange.cn</groupId>
+	<artifactId>springAopAnnotation</artifactId>
+	<version>1.0.SNAPSHOT</version>
+
+	<properties>
+		<spring.version>3.2.8.RELEASE</spring.version>
+	</properties>
+
+	<dependencies>
+		<!-- SPRING -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>user_release</id>
+			<name>user release</name>
+			<url>http://hyman-zhang.missionsky.com:8888/nexus/content/repositories/releases</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>user_snapshots</id>
+			<name>user snapshots</name>
+			<url>http://hyman-zhang.missionsky.com:8888/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
